@@ -37,7 +37,7 @@ class AppliedOptics(Journal):
         soup = BeautifulSoup(page.content, "html.parser")
         articles = soup.find_all("div", class_="media-twbs-body")
         for a in articles:
-            href = self.base_url + a.find("a")["href"]
+            href = "https://opg.optica.org" + a.find("a")["href"]
             title = a.find("a").text
             authors = a.find("p", class_="article-authors").text
             articles_result.append(Article(href, title, authors))
