@@ -12,7 +12,11 @@ See [Steps to implement a new journal](#steps-to-implement-a-new-journal) to imp
 - `beautifulsoup4==4.11.2`
 - `requests==2.28.2`
 
-Older versions might work too. Install with 
+Older versions might work too. After cloning the repository
+```bash
+$ git clone https://github.com/twinter42/paper-grabber.git
+```
+install the dependencies with 
 ```bash
 $ pip install -r requirements.txt
 ```
