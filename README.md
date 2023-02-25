@@ -3,7 +3,8 @@
 A simple python script to scrape and sort papers from different journals given a weighted keyword list. This way, important papers might be recognized faster.
 
 ## Currently supported journals
-- [Applied Optics](https://opg.optica.org/ao/home.cfm)
+- [Optica](https://opg.optica.org/optica/home.cfm)
+- [Optica - Applied Optics](https://opg.optica.org/ao/home.cfm)
 - [Review of Scientific Instruments](https://aip.scitation.org/journal/rsi)
 
 See [Steps to implement a new journal](#steps-to-implement-a-new-journal) to implement a new journal.
