@@ -5,7 +5,9 @@ from bs4 import BeautifulSoup
 
 JOURNAL_NAMES = {"optica": "Optica",
                  "josaa": "Journal of the Optical Society of America A",
-                 "ao": "Applied Optics"}
+                 "ao": "Applied Optics",
+                 "aop":"Advances in Optics and Photonics",
+                 "ol":"Optics Letters"}
 
 def get_available_journals():
     for i in JOURNAL_NAMES:
