@@ -3,11 +3,19 @@ from journals.article import Article
 import requests
 from bs4 import BeautifulSoup
 
+JOURNAL_NAMES = {"optica": "Optica",
+                 "josaa": "Journal of the Optical Society of America A",
+                 "ao": "Applied Optics"}
+
+def get_available_journals():
+    for i in JOURNAL_NAMES:
+        print(f"{JOURNAL_NAMES[i]}, short: '{i}'")
 
 class Optica(Journal):
-    def __init__(self):
+    def __init__(self, journal="optica"):
         super().__init__()
-        self.base_url = "https://opg.optica.org/optica/"
+        self.journal = journal
+        self.base_url = f"https://opg.optica.org/{journal}/"
 
     def get_newest_issues(self, n=1):
         result = []
