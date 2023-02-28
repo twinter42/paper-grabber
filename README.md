@@ -3,7 +3,7 @@
 A simple python script to scrape and sort papers from different journals given a weighted keyword list. This way, important papers might be recognized faster.
 
 ## Currently supported journals
-- [Optica](https://opg.optica.org/optica/home.cfm), [Applied Optics](https://opg.optica.org/ao/home.cfm), [JOSA A](https://opg.optica.org/josaa/home.cfm)
+- [Optica](https://opg.optica.org/optica/home.cfm), [Applied Optics](https://opg.optica.org/ao/home.cfm), [JOSA A](https://opg.optica.org/josaa/home.cfm), [Optics Letters](https://opg.optica.org/ol/browse.cfm), [AOP](https://opg.optica.org/aop/browse.cfm)
 - [Nature Protocols](https://www.nature.com/nprot/), [Photonics](https://www.nature.com/nphoton/), [Physics](https://www.nature.com/nphys/), [Cell Biology](https://www.nature.com/ncb/)
 - [Review of Scientific Instruments](https://aip.scitation.org/journal/rsi)
 
@@ -64,7 +64,7 @@ articles = my_journal.get_article_list(no_issues=3) # return the list of article
 for a in articles:
     print(a.score, a.href, a.title)
 ```
-Currently supported multi-journal publishing groups: [Nature](https://www.nature.com/).
+Currently supported multi-journal publishing groups: [Nature](https://www.nature.com/), [Optica](https://opg.optica.org/).
 
 ## Steps to implement a new journal
 - Subclass the `Journal` class (see examples of already implemented journals)
