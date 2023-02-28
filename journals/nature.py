@@ -6,14 +6,25 @@ from bs4 import BeautifulSoup
 
 JOURNAL_NO_OFFSETS = {"nphys": 2004,
                       "nprot": 2005,
-                      "nphoton": 2006}
+                      "nphoton": 2006,
+                      "ncb": 1998}
+JOURNAL_NAMES = {"nphys": "Physics",
+                      "nprot": "Protocols",
+                      "nphoton": "Photonics",
+                      "ncb": "Cell Biology"}
 ARTICLE_TYPES = ["Letter", "Article", "Protocol"]
+
+
+def get_available_journals():
+    for i in JOURNAL_NAMES:
+        print(f"{JOURNAL_NAMES[i]}, short: '{i}'")
 
 class Nature(Journal):
     def __init__(self, journal="nphys"):
         super().__init__()
         self.journal = journal
         self.base_url = f"https://www.nature.com/{journal}/"
+
 
     def get_newest_issues(self, n=1):
         result = []
