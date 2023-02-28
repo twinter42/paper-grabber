@@ -66,6 +66,7 @@ articles = my_journal.get_article_list(no_issues=3) # return the list of article
 for a in articles:
     print(a.score, a.href, a.title)
 ```
+Currently supported multi-journal publishing groups: [Nature](https://www.nature.com/).
 
 ## Steps to implement a new journal
 - Subclass the `Journal` class (see examples of already implemented journals)
