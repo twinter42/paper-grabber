@@ -55,6 +55,18 @@ giraffe,-5
 ```
 One can add as many keywords as necessary.
 
+## Usage for multi-journal publishing groups
+Larger publishing groups like Nature can be reduced to a single class with arguments (see `nature.py` for example). Usage is similar:
+```python
+from journals.nature import Nature
+
+my_journal = Nature(journal='nphoton')
+articles = my_journal.get_article_list(no_issues=3) # return the list of articles sorted by keyword score
+
+for a in articles:
+    print(a.score, a.href, a.title)
+```
+
 ## Steps to implement a new journal
 - Subclass the `Journal` class (see examples of already implemented journals)
 - Use DevTools to find HTML elements corresponding to paper title, author and DOI
