@@ -6,7 +6,7 @@ A simple python script to scrape and sort papers from different journals given a
 - [Optica](https://opg.optica.org/optica/home.cfm)
 - [Optica - Applied Optics](https://opg.optica.org/ao/home.cfm)
 - [Optica - Journal of the Optical Society of America A](https://opg.optica.org/josaa/home.cfm)
-- [Nature - Protocols](https://www.nature.com/nprot/)
+- [Nature Protocols](https://www.nature.com/nprot/), [Photonics](https://www.nature.com/nphoton/), [Physics](https://www.nature.com/nphys/)
 - [Review of Scientific Instruments](https://aip.scitation.org/journal/rsi)
 
 See [Steps to implement a new journal](#steps-to-implement-a-new-journal) to implement a new journal.
